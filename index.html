@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flood Alert Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">شعار</div>
+    <div class="search">
+      <input type="text" placeholder="####### بحث..." />
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="box">
+        <canvas id="floodChart" width="300" height="150"></canvas>
+      </div>
+      <div class="box">
+        Do help you? <strong>Yes</strong><br/><br/>
+        <button class="help-button" onclick="alert('Help is on the way!')">طلب مساعدة</button>
+      </div>
+      <div class="box map">Map Placeholder</div>
+    </div>
+
+    <div class="main">
+      <div class="box alert-image" id="alert-box">
+        No Alert
+      </div>
+      <div class="log" id="alert-log">
+        <strong>Alert Log:</strong><br />
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
