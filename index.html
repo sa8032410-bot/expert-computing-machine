@@ -1,42 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flood Alert Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>قصص الأنبياء</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">شعار</div>
-    <div class="search">
-      <input type="text" placeholder="####### بحث..." />
-    </div>
-  </header>
 
-  <div class="container">
-    <div class="sidebar">
-      <div class="box">
-        <canvas id="floodChart" width="300" height="150"></canvas>
-      </div>
-      <div class="box">
-        Do help you? <strong>Yes</strong><br/><br/>
-        <button class="help-button" onclick="alert('Help is on the way!')">طلب مساعدة</button>
-      </div>
-      <div class="box map">Map Placeholder</div>
+<header>
+    <h1 id="title">قصص الأنبياء</h1>
+    <div class="controls">
+        <input type="text" id="search" placeholder="ابحث عن نبي...">
+        <select id="language">
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+        </select>
+        <button id="modeToggle">🌙</button>
     </div>
+</header>
 
-    <div class="main">
-      <div class="box alert-image" id="alert-box">
-        No Alert
-      </div>
-      <div class="log" id="alert-log">
-        <strong>Alert Log:</strong><br />
-      </div>
+<main>
+    <div class="prophets-list" id="prophetsList"></div>
+
+    <div class="display-area">
+        <img id="prophetImage" src="" alt="">
+        <h2 id="prophetName"></h2>
+        <p id="prophetStory"></p>
     </div>
-  </div>
+</main>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="script.js"></script>
+<footer>
+    تصميم وبرمجة: سلطان المعبدي
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
